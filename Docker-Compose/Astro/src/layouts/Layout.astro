@@ -1,0 +1,114 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Idol is an elegant landing page template for micro SaaS products built with AstroJS & Skeleton CSS"/>
+		<title>{title}</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style lang="scss" is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+
+	:root {
+		--accent: #cc4b06;
+    --dark: #000;
+    --tenary: #ecf7f8;
+		--base-font: 'Manrope', sans-serif;
+	}
+	html, body {
+		font-family: var(--base-font);
+		margin: 0px;
+		scroll-behavior: smooth;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	}
+
+	.block{
+	  display: block;
+	}
+
+  .flex{
+    display: flex;
+    &.center{
+      justify-content: center;
+    }
+  }
+.text-container{
+  max-width: 600px;
+  margin: 50px auto;
+}
+.h1-title, .h2-title, .s-subtitle, .l-subtitle{
+  font-weight: 700;
+}
+
+.h1-title{
+  font-size: 4rem;
+}
+.h2-title{
+  font-size: 3.2rem;
+}
+.l-subtitle{
+  font-size: 1.9rem;
+}
+
+.s-margin{
+  margin-bottom: 5px;
+}
+.m-margin{
+  margin-bottom: 2rem;
+}
+
+.md-width{
+  width: 300px;
+}
+.s-paragraph{
+  font-size: 1.3rem;
+}
+p{
+  font-size: 1.8rem;
+}
+
+.button{
+  border-radius: 8px;
+  &.button-primary, &.button-primary:hover,  &.button-primary:focus{
+    background: var(--accent);
+    border: var(--accent);
+  }
+  &:hover{
+    opacity: .8;
+  }
+}
+
+section{
+  padding: 70px 0;
+}
+
+.center{ 
+    text-align: center; 
+}
+
+.product-cta{
+  max-width: 250px;
+  margin: 0 auto;
+  .button{
+    margin-bottom: 3px;
+  }
+}
+
+</style>

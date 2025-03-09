@@ -1,0 +1,9 @@
+
+services:
+  astro:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - $SERVICE_FDQN_ASTRO_8080
+    restart: unless-stopped
