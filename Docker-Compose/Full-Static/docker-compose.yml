@@ -1,0 +1,9 @@
+
+services:
+  static:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - $SERVICE_FDQN_STATIC_8080
+    restart: unless-stopped
