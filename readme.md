@@ -1,6 +1,6 @@
 # New Video - [YouTube](https://youtu.be/eQl3DSlrEHA?si=3oL_51aNnMt_H-PF)
 
-[<img src="assets/11.png?raw=true">](https://youtu.be/XAXwwtb4P9M?si=jTCbrBU2nCsK2057)
+[<img src="assets/11.webp?raw=true">](https://youtu.be/XAXwwtb4P9M?si=jTCbrBU2nCsK2057)
 
 # Playlists
 - [Coolify Beginners Tutorials](https://www.youtube.com/playlist?list=PLoVHNPkf8ZxrVW0vclP5ngQQcTz6-VzL-)
