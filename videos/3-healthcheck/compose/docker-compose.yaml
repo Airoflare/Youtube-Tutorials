@@ -1,0 +1,13 @@
+services:
+  nginx1:
+    image: nginx:alpine
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://localhost"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+  nginx2:
+    image: nginx:alpine
+    exclude_from_hc: true
