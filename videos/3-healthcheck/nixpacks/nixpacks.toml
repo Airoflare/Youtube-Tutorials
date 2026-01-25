@@ -1,9 +1,0 @@
-providers = ["node"]
-
-[variables]
-NODE_ENV = "production"
-
-[phases.install]
-cmds = [
-  "npm ci --omit=dev"
-]
